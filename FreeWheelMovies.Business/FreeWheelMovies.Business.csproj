@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FreeWheelMovies.Data\FreeWheelMovies.Data.csproj" />
+    <ProjectReference Include="..\FreeWheelMovies.Shared\FreeWheelMovies.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeWheelMovies.API</name>
+    </assembly>
+    <members>
+        <member name="T:FreeWheelMovies.Controllers.MovieRatingController">
+            <summary>
+            Movie Rating Controller
+            </summary>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MovieRatingController.#ctor(FreeWheelMovies.Business.Interfaces.IMovieRatingService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="movieRatingSvc"></param>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MovieRatingController.Get(System.Int32)">
+            <summary>
+            Get Average rating for a movie
+            </summary>
+            <param name="movieID">movie Id</param>
+            <returns>Returns the rating rounded to closest 0.5</returns>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MovieRatingController.Post(FreeWheelMovies.Shared.Entities.MovieRating)">
+            <summary>
+            Review a Movie
+            </summary>
+            <param name="userReview">Review - UserID, MovieID, Rating, Comment</param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeWheelMovies.Controllers.MoviesController">
+            <summary>
+            Movies Controller
+            </summary>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MoviesController.#ctor(FreeWheelMovies.Business.Interfaces.IMovieService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="movieSvc"></param>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MoviesController.Get">
+            <summary>
+            Get all movies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MoviesController.Get(System.Int32)">
+            <summary>
+            Get movie by ID
+            </summary>
+            <param name="id">ID of Movie</param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MoviesController.Post(FreeWheelMovies.Shared.Entities.Movie)">
+            <summary>
+            Save a movie
+            </summary>
+            <param name="movie">Movie detail</param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeWheelMovies.Controllers.MovieSearchController">
+            <summary>
+            Search Movie controller
+            </summary>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MovieSearchController.#ctor(FreeWheelMovies.Business.Interfaces.IMovieService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="movieSvc"></param>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.MovieSearchController.Get(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Title"></param>
+            <param name="YearOfRelease"></param>
+            <param name="Genre"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeWheelMovies.Controllers.TopMovieController">
+            <summary>
+            Movie Rating Controller
+            </summary>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.TopMovieController.#ctor(FreeWheelMovies.Business.Interfaces.IMovieRatingService,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="movieRatingSvc"></param>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.TopMovieController.Get">
+            <summary>
+            Get Top rated movies
+            </summary>
+            <param name="userID">User Id</param>
+            <returns>Json with the list of movies</returns>
+        </member>
+        <member name="M:FreeWheelMovies.Controllers.TopMovieController.Get(System.Int32)">
+            <summary>
+            Get Top rated movies for a user
+            </summary>
+            <param name="userID">User Id</param>
+            <returns>Json with the list of movies</returns>
+        </member>
+        <member name="M:FreeWheelMovies.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

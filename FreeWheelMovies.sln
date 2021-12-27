@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.API", "FreeWheelMovies\FreeWheelMovies.API.csproj", "{FC03A110-05E2-4D4A-8693-7BDF00F0D2EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.Business", "FreeWheelMovies.Business\FreeWheelMovies.Business.csproj", "{12586A44-B341-40D8-BAC3-24E5C43CD90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.Data", "FreeWheelMovies.Data\FreeWheelMovies.Data.csproj", "{D17BCAA3-A94D-4E48-B284-CE39F28519AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.Shared", "FreeWheelMovies.Shared\FreeWheelMovies.Shared.csproj", "{FD911512-6836-47E0-8EFA-0F2FADB04171}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC03A110-05E2-4D4A-8693-7BDF00F0D2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC03A110-05E2-4D4A-8693-7BDF00F0D2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC03A110-05E2-4D4A-8693-7BDF00F0D2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC03A110-05E2-4D4A-8693-7BDF00F0D2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12586A44-B341-40D8-BAC3-24E5C43CD90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12586A44-B341-40D8-BAC3-24E5C43CD90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12586A44-B341-40D8-BAC3-24E5C43CD90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12586A44-B341-40D8-BAC3-24E5C43CD90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17BCAA3-A94D-4E48-B284-CE39F28519AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17BCAA3-A94D-4E48-B284-CE39F28519AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17BCAA3-A94D-4E48-B284-CE39F28519AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17BCAA3-A94D-4E48-B284-CE39F28519AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD911512-6836-47E0-8EFA-0F2FADB04171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD911512-6836-47E0-8EFA-0F2FADB04171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD911512-6836-47E0-8EFA-0F2FADB04171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD911512-6836-47E0-8EFA-0F2FADB04171}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4575FBF2-EAF0-4AED-B721-C4CE2E1824A5}
+	EndGlobalSection
+EndGlobal
