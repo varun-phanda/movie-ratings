@@ -1,21 +1,38 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace FreeWheelMovies.Shared.Entities
 {
-    public class MovieRating
+    /// <summary>
+    /// Movie Rating
+    /// </summary>
+    public class MovieRating : FreeWheelBase
     {
-        public int? ID { get; set; }
+        /// <summary>
+        /// User ID
+        /// </summary>
         public int UserID { get; set; }
+        /// <summary>
+        /// Movie ID
+        /// </summary>
         public int MovieID { get; set; }
-        public RatingStars Rating { get; set; }
+        /// <summary>
+        /// Rating in range of 1-5
+        /// </summary>
+        public RatingStars? Rating { get; set; }
+        /// <summary>
+        /// Modified at DateTime
+        /// </summary>
+        [IgnoreDataMember]
         public DateTime ModifiedAt { get; set; }
+        /// <summary>
+        /// Comment about the Movie
+        /// </summary>
         public string Comment { get; set; }
-        public bool IsActive { get; set; }
     }
 
     public enum RatingStars
     {
-        Default = 0,
         One = 1,
         Two,
         Three,

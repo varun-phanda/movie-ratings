@@ -60,7 +60,8 @@ namespace FreeWheelMovies.Data.DataManager
                     UserID = rating.UserID,
                     Rating = rating.Rating,
                     Comment = rating.Comment,
-                    ModifiedAt = DateTime.Now
+                    ModifiedAt = DateTime.Now,
+                    IsActive = true
             };
                 db.Set<MovieRating>().Add(movieRating);
             }
@@ -69,6 +70,7 @@ namespace FreeWheelMovies.Data.DataManager
                 movieRating.Rating = rating.Rating;
                 movieRating.Comment = rating.Comment;
                 movieRating.ModifiedAt = DateTime.Now;
+                movieRating.IsActive = true;
                 db.Set<MovieRating>().Update(movieRating);
             }
             return await db.SaveChangesAsync() > 0;

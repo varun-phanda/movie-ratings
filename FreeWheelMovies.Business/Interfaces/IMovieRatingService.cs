@@ -9,7 +9,7 @@ namespace FreeWheelMovies.Business.Interfaces
         Task<double> GetMovieRating(int movieID);
 
         Task<bool> SaveMovieReviewAsync(MovieRating review);
-        Task<List<Movie>> GetTopRatedMovieByUserAsync(int userID);
+        Task<List<Movie>> GetTopRatedMoviesByUserAsync(int userID, int numberOfTopMovies);
         Task<List<Movie>> GetTopRatedMoviesAsync(int noOfRecords);
     }
 }
