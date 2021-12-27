@@ -63,6 +63,10 @@ namespace FreeWheelMovies.Controllers
             {
                 return NotFound(ex.Message);
             }
+            catch (Exception ex)
+            {
+                return BadRequest("Invalid Data");
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace FreeWheelMovies.Controllers
@@ -36,8 +37,20 @@ namespace FreeWheelMovies.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Movie>>> Get()
         {
-            var numberOfTopMovies = config.GetValue<int>("NumberOfTopMovies",1);
-            return await movieRatingService.GetTopRatedMoviesAsync(numberOfTopMovies);
+            try
+            {
+                var numberOfTopMovies = config.GetValue<int>("NumberOfTopMovies", 1);
+                var topMovies = await movieRatingService.GetTopRatedMoviesAsync(numberOfTopMovies);
+                if (topMovies.Count() <= 0)
+                {
+                    return NotFound("No movie found");
+                }
+                return Json(topMovies);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         /// <summary>
@@ -48,8 +61,24 @@ namespace FreeWheelMovies.Controllers
         [HttpGet("{userID}")]
         public async Task<ActionResult<List<Movie>>> Get(int userID)
         {
-            var numberOfTopMovies = config.GetValue<int>("NumberOfTopMovies", 1);
-            return await movieRatingService.GetTopRatedMovieByUserAsync(userID, numberOfTopMovies);
+            try
+            {
+                var numberOfTopMovies = config.GetValue<int>("NumberOfTopMovies", 1);
+                var topMovies = await movieRatingService.GetTopRatedMoviesByUserAsync(userID, numberOfTopMovies);
+                if (topMovies.Count() <= 0)
+                {
+                    return NotFound("No movie found");
+                }
+                return Json(topMovies);
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

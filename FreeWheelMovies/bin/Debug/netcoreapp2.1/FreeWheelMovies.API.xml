@@ -24,9 +24,9 @@
         </member>
         <member name="M:FreeWheelMovies.Controllers.MovieRatingController.Post(FreeWheelMovies.Shared.Entities.MovieRating)">
             <summary>
-            Review a Movie
+            Save the Review for a Movie
             </summary>
-            <param name="userReview">Review - UserID, MovieID, Rating, Comment</param>
+            <param name="movieRating">Movie's Rating</param>
             <returns></returns>
         </member>
         <member name="T:FreeWheelMovies.Controllers.MoviesController">
@@ -42,16 +42,16 @@
         </member>
         <member name="M:FreeWheelMovies.Controllers.MoviesController.Get">
             <summary>
-            Get all movies
+            Get list of all movies
             </summary>
-            <returns></returns>
+            <returns>Movies List as Json</returns>
         </member>
         <member name="M:FreeWheelMovies.Controllers.MoviesController.Get(System.Int32)">
             <summary>
-            Get movie by ID
+            Get a movie by ID
             </summary>
             <param name="id">ID of Movie</param>
-            <returns></returns>
+            <returns>Movie Json</returns>
         </member>
         <member name="M:FreeWheelMovies.Controllers.MoviesController.Post(FreeWheelMovies.Shared.Entities.Movie)">
             <summary>
@@ -73,12 +73,12 @@
         </member>
         <member name="M:FreeWheelMovies.Controllers.MovieSearchController.Get(System.String,System.String,System.String)">
             <summary>
-            
+            Search a movie by properties of Movie
             </summary>
-            <param name="Title"></param>
-            <param name="YearOfRelease"></param>
-            <param name="Genre"></param>
-            <returns></returns>
+            <param name="Title">Title of the movie</param>
+            <param name="YearOfRelease">Year of movie's release</param>
+            <param name="Genre">Movie's Genre</param>
+            <returns>List of Movies as Json</returns>
         </member>
         <member name="T:FreeWheelMovies.Controllers.TopMovieController">
             <summary>
@@ -90,12 +90,12 @@
             Constructor
             </summary>
             <param name="movieRatingSvc"></param>
+            <param name="configuration"></param>
         </member>
         <member name="M:FreeWheelMovies.Controllers.TopMovieController.Get">
             <summary>
             Get Top rated movies
             </summary>
-            <param name="userID">User Id</param>
             <returns>Json with the list of movies</returns>
         </member>
         <member name="M:FreeWheelMovies.Controllers.TopMovieController.Get(System.Int32)">
