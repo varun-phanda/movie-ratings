@@ -63,7 +63,7 @@ namespace FreeWheelMovies.Controllers
             {
                 if (await movieService.SaveMovieAsync(movie))
                 {
-                    return Ok();
+                    return Ok(true);
                 }
                 else
                 {

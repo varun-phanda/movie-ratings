@@ -41,7 +41,7 @@ namespace FreeWheelMovies.Controllers
             {
                 var numberOfTopMovies = config.GetValue<int>("NumberOfTopMovies", 1);
                 var topMovies = await movieRatingService.GetTopRatedMoviesAsync(numberOfTopMovies);
-                if (topMovies.Count() <= 0)
+                if (topMovies == null || topMovies.Count() <= 0)
                 {
                     return NotFound("No movie found");
                 }

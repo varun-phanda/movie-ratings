@@ -32,8 +32,15 @@ namespace FreeWheelMovies.Controllers
         [HttpGet("{movieID}")]
         public ActionResult<double> Get(int movieID)
         {
-            var rating = movieRatingService.GetMovieRating(movieID);
-            return Json(rating);
+            try
+            {
+                var rating = movieRatingService.GetMovieRating(movieID);
+                return Json(rating);
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         /// <summary>

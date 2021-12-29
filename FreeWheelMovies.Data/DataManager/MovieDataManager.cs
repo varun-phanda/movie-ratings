@@ -43,6 +43,10 @@ namespace FreeWheelMovies.Data.DataManager
                 {
                     movies = movies.Where(m => m.ReleaseDate.Year == yearRelease);
                 }
+                else
+                {
+                    throw new ArgumentException("Invalid Year of release");
+                }
             }
 
             if (!string.IsNullOrWhiteSpace(genre))
