@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.API", "FreeWheelMovies\FreeWheelMovies.API.csproj", "{FC03A110-05E2-4D4A-8693-7BDF00F0D2EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeWheelMovies.API", "FreeWheelMovies\FreeWheelMovies.API.csproj", "{FC03A110-05E2-4D4A-8693-7BDF00F0D2EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.Business", "FreeWheelMovies.Business\FreeWheelMovies.Business.csproj", "{12586A44-B341-40D8-BAC3-24E5C43CD90E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeWheelMovies.Business", "FreeWheelMovies.Business\FreeWheelMovies.Business.csproj", "{12586A44-B341-40D8-BAC3-24E5C43CD90E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.Data", "FreeWheelMovies.Data\FreeWheelMovies.Data.csproj", "{D17BCAA3-A94D-4E48-B284-CE39F28519AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeWheelMovies.Data", "FreeWheelMovies.Data\FreeWheelMovies.Data.csproj", "{D17BCAA3-A94D-4E48-B284-CE39F28519AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.Shared", "FreeWheelMovies.Shared\FreeWheelMovies.Shared.csproj", "{FD911512-6836-47E0-8EFA-0F2FADB04171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeWheelMovies.Shared", "FreeWheelMovies.Shared\FreeWheelMovies.Shared.csproj", "{FD911512-6836-47E0-8EFA-0F2FADB04171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelMovies.API.Tests", "FreeWheelMovies.API.Tests\FreeWheelMovies.API.Tests.csproj", "{3D4E7E40-04D4-4927-838B-C725FDEF0229}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FD911512-6836-47E0-8EFA-0F2FADB04171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD911512-6836-47E0-8EFA-0F2FADB04171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD911512-6836-47E0-8EFA-0F2FADB04171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4E7E40-04D4-4927-838B-C725FDEF0229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4E7E40-04D4-4927-838B-C725FDEF0229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4E7E40-04D4-4927-838B-C725FDEF0229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4E7E40-04D4-4927-838B-C725FDEF0229}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
